@@ -16,5 +16,6 @@ resource "azurerm_template_deployment" "subscription" {
     serviceBusSubscriptionName  = "${var.name}"
     lockDuration                = "${var.lock_duration}"
     maxDeliveryCount            = "${var.max_delivery_count}"
+    forwardTo                   = "${var.forward_to}"
   }
 }

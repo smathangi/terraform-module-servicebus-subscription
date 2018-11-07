@@ -29,3 +29,9 @@ variable "lock_duration" {
   description = "Message lock duration (ISO-8601)"
   default = "PT1M"
 }
+
+variable "forward_to" {
+  type = "string"
+  description = "Queue/Topic name to forward the messages"
+}
+

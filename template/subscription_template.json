@@ -31,6 +31,12 @@
       "metadata": {
         "description": "Maximum number of attempts to deliver a message before it's sent to dead letter queue"
       }
+    },
+    "forwardTo": {
+      "type": "string",
+      "metadata": {
+        "description": "Message lock duration (ISO-8601)"
+      }
     }
   },
   "variables": {
@@ -48,7 +54,8 @@
         "deadLetteringOnMessageExpiration": "true",
         "maxDeliveryCount": "[parameters('maxDeliveryCount')]",
         "enableBatchedOperations": "false",
-        "autoDeleteOnIdle": "P10675199DT2H48M5.4775807S"
+        "autoDeleteOnIdle": "P10675199DT2H48M5.4775807S",
+        "forwardTo": "[parameters('forwardTo')]"
       }
     }
   ]
