@@ -35,7 +35,7 @@
     "forwardTo": {
       "type": "string",
       "metadata": {
-        "description": "Message lock duration (ISO-8601)"
+        "description": "Queue/Topic name to forward the messages"
       }
     }
   },
